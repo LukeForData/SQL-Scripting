@@ -170,19 +170,19 @@ BEGIN
                     ON tgt.PKEY = src.PKEY
         WHEN NOT MATCHED THEN
                     INSERT (tgt.PKEY,
-	                          tgt.COL1,
+	                    tgt.COL1,
                             tgt.COL2,
                             tgt.COL3,
-                        	  tgt.COL4,
+                            tgt.COL4,
                             tgt.COL5,
                             tgt.COL6_STRING_NUMBER,
                             tgt.COL6_STRING_DESCRIPTION
                            )
                     VALUES (src.PKEY,
-	                          src.COL1,
+	                    src.COL1,
                             src.COL2,
                             src.COL3,
-                        	  src.COL4,
+                            src.COL4,
                             src.COL5,
                             src.COL6_STRING_NUMBER,
                             src.COL6_STRING_DESCRIPTION
